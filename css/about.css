@@ -75,7 +75,7 @@
     text-align: center;
 }
 .about {
-    height: auto; /* Adjust height for mobile */
+    height: fit-content; /* Adjust height for mobile */
     padding: 2.5rem 0; /* Adjust padding for mobile */
     background-position: bottom right; /* Ensure the image is positioned correctly */
     background-size: 150%; /* Maintain zoom level */
