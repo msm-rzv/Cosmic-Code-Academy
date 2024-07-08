@@ -68,8 +68,8 @@
 
 @media screen and (max-width: 600px){
    /*====about===*/
-.focus{
-    height: 130vh;
+.focus__container{
+    height: fit-content;
 }
 .focus{
     text-align: center;
