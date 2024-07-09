@@ -443,7 +443,6 @@ footer ul li a:hover{
         font-size: 1.8rem;
         text-align: center;
 
-
     }
     .details__container{
         text-align: center;
@@ -453,7 +452,7 @@ footer ul li a:hover{
         margin-top: 20rem; /* Move the image up */
         margin-bottom: 1rem; /* Adjust spacing below the image */
     }
-    .details{
+    .details__container{
         height: fit-content;
         background-size: 250%;
        
@@ -463,11 +462,11 @@ footer ul li a:hover{
     /*======courses=======*/
     .courses__container{
         grid-template-columns: 1fr;
+        height: fit-content;
+        
 
     }
-    .courses {
-        margin-top: -9rem;
-    }
+    
     /*===faq====*/
     .faqs h2 {
         font-size: 1.5rem; /* Decrease font size for smaller screens */
@@ -486,5 +485,6 @@ footer ul li a:hover{
 
 
 }
+
 
 
