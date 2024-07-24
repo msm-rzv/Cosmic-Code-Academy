@@ -25,6 +25,7 @@
     align-items: center;
     gap: 14rem;
     height: 100%;
+    animation: fade 6s ease both;
 }
 .about__right p {
     margin: 1rem 0 2.4rem;
@@ -39,6 +40,7 @@
 /*********our focus************/
 .focus__container{
     height: 27rem;
+    animation: fade 6s ease both;
         
 }
 
