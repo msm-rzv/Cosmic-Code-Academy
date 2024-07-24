@@ -252,6 +252,8 @@ header{
 }
 .details p {
     margin: 1rem 0 2.4rem;
+	animation: fade linear;
+   	animation-timeline: view();
     
 }
 
