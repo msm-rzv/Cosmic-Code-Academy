@@ -470,6 +470,9 @@ footer ul li a:hover{
     .footer__container{
         grid-template-columns: 1fr 1fr;
     }
+	footer{
+		padding-bottom: 3rem;
+	}
   
 
 }
