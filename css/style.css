@@ -31,15 +31,68 @@
 
 body{
   font-family: "Orbitron", sans-serif;
-  
-  line-height: 1.7;
-  color: var(--color-white);
-    background: linear-gradient(-45deg, #e54ed0,#221c69 ,#080942, #e54ed0 );
-    background-size: 400% 400%;
+	line-height: 1.7;
+	color: var(--color-white);
+	background: linear-gradient(-45deg, #e54ed0,#221c69 ,#080942, #e54ed0 );
+    	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
      
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} /* gradient background */
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translate();
+    }
+    100%{
+        transform: translate();
+    }
+} /* fading */
+
+@keyframes animate{
+    from{
+        text-shadow: 0 0 20px #fff
+    }
+    to{
+        text-shadow: 0 0 30px #fff, 0 0 10px #fff;
+    }
+
+}
+/* glowy text */
+
+.animate-text {
+    animation: animate 1.5s infinite alternate;
+    color: white; /* Keep the pink color */
+    font-style: italic;
+    font-weight: bold;
+}
+.animate-text-nav{
+    animation: animate 1.5s infinite alternate;
+    color: white; 
+        
+}
+/* glowytext class for courses and navigation */
 
 
 .container{
@@ -55,6 +108,7 @@ section{
 section h2{
     text-align: center;
     margin-bottom: 4rem;
+	color: #fff;
 
 }
 
@@ -90,16 +144,19 @@ img{
     border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
+	animation: animate 1s ease-in-out infinite;
 
 }
 .btn:hover{
     background: transparent;
     color: var(--color-white);
     border-color: var(--color-white);
+	animation: animate 1s ease-in-out infinite;
 }
 .btn-primary{
     background: #e54ed0;
     color: var(--color-white);
+	animation: animate 1s ease-in-out infinite;
 }
 
 /*-----------NAVIGATION BAR------------*/
@@ -161,6 +218,7 @@ header{
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
+	animation: fade 6s ease both;
 
 }
 .header__container{
@@ -178,6 +236,7 @@ header{
 
 .details__container{
     height: 40rem;
+	animation: fade 6s ease both;
         
 }
 .details{
@@ -198,12 +257,14 @@ header{
 
 /*-------Our courses------*/
 .courses {
-    margin-top: 2rem;
+     background-color: #221c69;
 }
 .courses__container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+	animation: fade linear;
+    animation-timeline: view();
 
 }
 .course__image img{
@@ -243,6 +304,8 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+	  animation: fade linear;
+    animation-timeline: view();
 }
 
 .faq{
@@ -308,6 +371,11 @@ footer ul li a:hover{
 /*=========Media Queries (Tablets)========*/
 
 @media screen and (max-width: 1024px){
+	body{
+    background: linear-gradient(-45deg, #e54ed0,#221c69 ,#080942, #e54ed0 );
+    background-size: 200% 200%;
+	animation: gradient 10s ease infinite;
+    }
     .container {
        width: var(--container-width-md);
     }
