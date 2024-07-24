@@ -10,6 +10,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
     gap: 2rem;
+    animation: fade 6s ease both;
 }
 
 .course2__image img {
