@@ -342,6 +342,7 @@ footer{
     padding-top: 5rem;
     font-size: 0.9rem;
     margin-bottom: 5rem;
+	padding-bottom: 5rem;
 }
 
 .footer__container{
@@ -368,7 +369,9 @@ footer ul li a:hover{
 .footer__logo-image {
     max-width: 200px; /* Adjust the width as needed */
     height: auto;
+	
 }
+
 
 
 /*=========Media Queries (Tablets)========*/
